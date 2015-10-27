@@ -1,5 +1,5 @@
 @echo off
-@For /F "tokens=1,2,3 delims=/ " %%A in ('echo %date%') do @( 
+@For /F "tokens=1,2,3 delims=/ " %%A in ("%date%") do @( 
         Set Year=%%A
         Set Month=%%B
         Set Day=%%C
@@ -8,7 +8,7 @@
 :first
 
 
-@For /F "tokens=1,2,3 delims=/ " %%A in ('echo %time%') do @( 
+@For /F "tokens=1,2,3 delims=/ " %%A in ("%time%") do @( 
         Set Hour=%%A
         Set Min=%%B
         Set Sec=%%C
